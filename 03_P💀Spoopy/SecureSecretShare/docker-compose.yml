@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: secret_share/
+    ports:
+      - "37585:8080"
+    depends_on:
+      - "localmongo"
+    restart: always
+  localmongo:
+    build: localmongo/
