@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CSR::Adventure</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">CSR Adventure</div>
+      </div>
+    </div>
+    <div class="description">
+      <h2>CSR::Adventure</h2>
+      <p>Can you slay all the monsters? You will be rewarded handsomely...</p>
+      <h3>Credits</h3>
+      <p>
+        This challenge uses the following free assets/tools:
+        <ul>
+          <li><a href="https://www.dafont.com/i-pixel-u.font">i pixel u Font</a></li>
+          <li><a href="https://ericskiff.com/music/">Eric Skiff - Come and Find Me</a></li>
+          <li><a href="https://0x72.itch.io/dungeontileset-ii">16x16 DungeonTileset II by 0x72</a></li>
+          <li><a href="https://www.drpetter.se/project_sfxr.html">sfxr</a></li>
+        </ul>
+        Made by <a href="https://de.linkedin.com/in/moritz-thomas-34992718a">Moritz Thomas</a> @ <a href="https://nviso.eu">NVISO</a>.
+      </p>
+    </div>
+  </body>
+</html>

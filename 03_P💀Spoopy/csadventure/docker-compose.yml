@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    read_only: true
+    build: docker/
+    ports:
+      - "6543:8080"
+

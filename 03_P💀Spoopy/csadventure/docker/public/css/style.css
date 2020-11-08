@@ -1,0 +1,16 @@
+@font-face { 
+    font-family: "LINTSEC"; 
+    src: url("/fonts/i-pixel-u.ttf"); 
+    }
+
+body {
+    background-color: black;
+    font-family: LINTSEC, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.description {
+    position: absolute;
+    top: 100%;
+    left: 35%;
+}
