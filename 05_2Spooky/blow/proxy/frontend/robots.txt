@@ -1,0 +1,4 @@
+User-agent: *
+# These are the very best submissions
+# Safe because they are still encrypted
+Disallow: /juicy.logs

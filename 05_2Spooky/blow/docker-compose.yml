@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  webapp:
+    build: webapp
+  proxy:
+    build: proxy
+    ports:
+      - "1234:80"
+    depends_on:
+      - webapp

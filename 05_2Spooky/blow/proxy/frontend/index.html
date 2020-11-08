@@ -1,0 +1,35 @@
+<html>
+	<head>
+    <script src="out.js"></script>
+	<script>
+		function send(msg) {
+			var xhr = new XMLHttpRequest();
+			var url = "/submit";
+			xhr.open("POST", url, true);
+			xhr.setRequestHeader("Content-Type", "text/plain");
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState === 4 && xhr.status === 200) {
+					var json = JSON.parse(xhr.responseText);
+					console.log(json);
+				}
+			};
+			xhr.send(msg);
+		}
+		function submit(){
+			encrypt(document.getElementById("secret").value, send);
+		}
+
+	</script>
+	</head>
+	<body>
+	<h1>Secure Whistle Blowing</h1>
+	<p>
+		This is a secure platform to share you biggest secrets with us. <strong>Safely.</strong>
+	</p>
+	Secrets: <br/>
+	<textarea id="secret">
+
+	</textarea>
+	<button onclick="submit();" type="button">Submit!</button>
+	</body>
+</html>
