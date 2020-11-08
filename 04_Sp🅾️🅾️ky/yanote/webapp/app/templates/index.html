@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Welcome To The Flag Lottery!{% endblock %}
+{% block content %}
+<p> Choose a username to participate with in the lottery</p>
+<form action="/mac_user" method="POST">
+  <input type="text" name="user" value="user123" />
+  <input type="submit" value="Participate!">
+</form>
+{% endblock %}

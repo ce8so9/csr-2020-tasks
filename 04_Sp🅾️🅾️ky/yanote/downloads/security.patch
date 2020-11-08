@@ -1,0 +1,8 @@
+17a18,24
+> def MAC(pickled_user):
+>     """
+>     Add message authentication code to user.
+>     Since nobody knows the key, nobody can change it!
+>     """
+>     return pickled_user.hex() + "-" + hex(zlib.crc32(secret.KEY + pickled_user))[2:]
+> 

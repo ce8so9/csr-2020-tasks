@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Login!{% endblock %}
+{% block content %}
+<p> Login:</p>
+{{ msg }}
+<form method="POST">
+  <input type="text" name="username" value="" />
+  <input type="text" name="password" value="" />
+  <input type="submit" value="Login" />
+</form>
+Or register <a href="/register">here</a>
+{% endblock %}

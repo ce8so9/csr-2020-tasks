@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  db:
+    build: db
+    environment:
+      MYSQL_ROOT_PASSWORD: fshfuhwnenwnfew
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: 123456
+  web:
+    build: webapp
+    ports:
+     - "7717:8000"

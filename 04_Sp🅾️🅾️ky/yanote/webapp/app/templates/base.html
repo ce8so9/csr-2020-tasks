@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Notes</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" lang="en" content="Thesis Converter">
+		<link rel="stylesheet" href="/static/css/style.css">
+
+    </head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header-heading">Note Storage</h1>
+			</div>
+			<div class="content">
+				<div class="main">
+
+                    <h1>{% block title %}{% endblock %}</h1>
+                    {% block content %}{% endblock %}
+
+				</div>
+			</div>
+			<div class="footer">
+        &copy; Note Storage Systems.
+			</div>
+		</div>
+	</body>
+</html>

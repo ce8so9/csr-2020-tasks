@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Notes{% endblock %}
+{% block content %}
+{% if dance %}
+ <div class="overlay">
+    <audio autoplay loop>
+  <source src="/static/music.ogg" type="audio/ogg">
+  Your browser does not support the audio tag.
+</audio>
+<h1 style="color: red;">YOU NOW HAVE THE PERMISSION TO DANCE!</h1>
+    <img src="/static/img/dance_1.gif" /><img src="/static/img/dance_2.gif" /><img src="/static/img/dance_3.gif" /><img src="/static/img/dance_4.gif" /><img src="/static/img/dance_5.gif" />
+    <img src="/static/img/dance_8.gif" /><img src="/static/img/dance_6.gif" /><img src="/static/img/dance_7.gif" />
+ </div>
+{% endif %}
+<p> Save notes:</p>
+<form method="POST">
+  <label>Note:</label><input type="text" name="content" value="" /><br/>
+  <input type="submit" value="save">
+</form>
+{% if notes %}
+Your notes:
+{% for note in notes %}
+<ul>
+        <li>{{note}}</li>
+</ul>
+{% endfor %}
+{% endif %}
+{% endblock %}

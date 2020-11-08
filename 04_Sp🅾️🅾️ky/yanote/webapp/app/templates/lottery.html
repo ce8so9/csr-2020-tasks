@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Lottery Participation{% endblock %}
+{% block content %}
+    <p style="color:red;">{{msg}}</p>
+    <p>
+        Guess the correct number to win a flag!
+    </p>
+    <form method="GET"><input type="text" name="guess" value="1234" /> <input type="submit" value="Send" /></form>
+{% endblock %}
