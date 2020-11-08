@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  chall:
+    build: chall
+    ports:
+      - "31782:1337"
