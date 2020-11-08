@@ -1,0 +1,8 @@
+version: '3'
+services:
+  chall:
+    read_only: true
+    build: docker/
+    ports:
+      - "34187:7809"
+
