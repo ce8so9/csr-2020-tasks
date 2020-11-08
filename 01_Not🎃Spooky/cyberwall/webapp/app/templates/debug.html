@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Debugging{% endblock %}
+{% block content %}
+<h1>Test Host Connection</h1>
+<p>Send a ping to a host, to heck your connection.</p>
+<form method="POST">
+    <input type="text" name="target">
+    <input type="submit" value="Ping!" />
+</form>
+{% if output %}
+<pre>
+{{ output }}
+</pre>
+{% endif %}
+{% endblock %}

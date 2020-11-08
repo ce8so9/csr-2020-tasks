@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="/static/login.css">
+        <title>Cyberwall</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function checkPw() {
+              var pass = document.getElementsByName('passwd')[0].value;
+              if (pass != "rootpw1337") {
+                alert("This Password is invalid!");
+                return false;
+              }
+              window.location.replace("management.html");
+            }
+        </script>
+        <header id="blueBarBox" name="" class="">
+            <div id="" name="" class="logoBox"></div>
+            <div id="blueBarTitel" name="" class="blue_bar_title">TSISKO 1337 Cyberwall</div>
+            <div id="" name="" class="logoBox fake"></div>
+        </header>
+        <div class="dialog_outer">
+            <div id="dialogInner" class="dialog_inner">
+                <div id="dialogHeadBox" class="dialog_head_box">
+                    <h2 id="dialogTitle">Welcome to Your Cyberwall</h2>
+                </div>
+                <div id="dialogContent" class="dialog_content">
+                        <div class="formular"><p>Please login with your password.</p>
+                            <label for="uiPass">Password</label>
+                            <input type="password" tabindex="2" id="uiPass" maxlength="32" name="passwd">
+                        </div>
+                        <div class="btn_form_foot">
+                            <button type="submit" tabindex="3" id="submitLoginBtn" onclick="checkPw();">Login</button>
+                            <a href="javascript:alert('Press the Cyber Reset Button on your device!')">Lost Password?</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

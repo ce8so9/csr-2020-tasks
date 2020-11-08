@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="Cache-Control" content="private, no-transform">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="cleartype" content="on">
+
+
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <title>TSISKO 1337 Cyberwall</title>
+</head>
+
+<body class="">
+    <nav id="menuBox" class="" aria-live="off">
+        <div class="logoBox">
+            <div id="avmLogo" class="logoArea">
+                TSISKO 1337 Cyberwall
+            </div>
+        </div>
+        <div id="navigationMenu" class="menuArea">
+            <div class="menue head" role="menu">
+                <a href="/management.html?page=overview" id="overview" class="menu_item icon_overview show" role="link" aria-hidden="false" style="-webkit-box-ordinal-group: 10; order: 10;">Overview</a>
+                
+                <a href="/management.html?page=blockchain"
+                id="inet" class="show menu_item with_sub icon_inet" role="menuitem" aria-haspopup="true" aria-hidden="false" style="-webkit-box-ordinal-group: 30; order: 30;">Blockchain</a>
+                
+                <a href="/management.html?page=ai" id="tel" class="show menu_item with_sub icon_tel"
+                role="menuitem" aria-haspopup="true" aria-hidden="false" style="-webkit-box-ordinal-group: 40; order: 40;">Cyber AI</a>
+                
+                <a href="/management.html?page=cloudprotect" id="wlan" class="show menu_item with_sub icon_wlan"
+                role="menuitem" aria-haspopup="true" aria-hidden="false" style="-webkit-box-ordinal-group: 50; order: 50;">Cloud Protection</a>
+                
+                <a href="/management.html?page=debug" id="lan" class="show menu_item with_sub icon_lan"
+                role="menuitem" aria-haspopup="true" aria-hidden="false" style="-webkit-box-ordinal-group: 70; order: 70;">Debugging</a>
+    </nav>
+
+    <div id="uiPageTitleBox" class="breadcrumb hide">
+        <div id="uiPageTitle">
+            <div class="arrow_box">{% block title %}{% endblock %}</div>
+        </div>
+    </div>
+    <div id="disablePage"></div>
+    <header id="blueBarBox" class="">
+        <div id="blueBarLogo" class="blueBarLogo"></div>
+        <div id="blueBarRightBox" class="blueBarRightBox">
+            <div id="blueBarTitel" class="blue_bar_title">
+                TSISKO 1337 Cyberwall
+            </div>
+        </div>
+    </header>
+    <div id="contextHelp" title="Hilfe" class="contextHelp">
+        <div></div>
+    </div>
+    <main id="contentBox" class="" aria-live="off">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+
+</html>

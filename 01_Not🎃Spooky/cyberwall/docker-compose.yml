@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    build: webapp
+    ports:
+     - "3812:8000"
