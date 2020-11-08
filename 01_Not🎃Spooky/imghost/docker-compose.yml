@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    read_only: true
+    volumes:
+      - ./flag.txt:/flag.txt
+      - ./docker/srv/http:/srv/http # TODO: remove after testing phase
+    build: docker/
+    ports:
+      - "7667:80"
+  bot:
+    build: bot/
