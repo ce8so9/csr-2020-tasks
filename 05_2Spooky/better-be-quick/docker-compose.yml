@@ -1,0 +1,6 @@
+version: '3'
+services:
+  quickjs:
+    build: docker/
+    ports:
+      - "29546:1337"
