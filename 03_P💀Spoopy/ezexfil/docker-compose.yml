@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    read_only: true
+    volumes:
+      - ./flag.txt:/flag.txt
+    build: docker/
+    ports:
+      - "7553:7553"
+
