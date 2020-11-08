@@ -1,0 +1,6 @@
+version: '3'
+services:
+  qemu:
+    build: docker/
+    ports:
+      - "9124:1337"
