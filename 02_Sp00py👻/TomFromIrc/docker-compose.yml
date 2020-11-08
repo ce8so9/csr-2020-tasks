@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  server:
+    build: server
+    ports:
+      - "22001:80"
+  webapp:
+    build: webapp
+  flagbot:
+    build: flagbot
+
