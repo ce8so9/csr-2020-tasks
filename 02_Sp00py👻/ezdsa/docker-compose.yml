@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  signer:
+    build: signer
+    ports:
+      - "10101:10101"
+  runner:
+    build: runner
+    ports:
+      - "10100:10100"
