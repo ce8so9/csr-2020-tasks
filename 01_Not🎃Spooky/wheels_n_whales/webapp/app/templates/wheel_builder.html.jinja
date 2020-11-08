@@ -1,0 +1,31 @@
+{% extends "layout.html.jinja" %}
+
+{% block head %}
+<title>Create Wheel</title>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+<h1>Create a wheel</h1>
+<form action="/wheel" method="POST">
+  <div class="form-group">
+    <label class="form-check-label" for="inputname">Name</label>
+    <input type="text" class="form-control" id="inputname" name="name" placeholder="Enter whales name">
+  </div>
+  <div class="form-group">
+    <label class="form-check-label" for="image_num">Picture num</label>
+    <select name="image_num" id="image_num" class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="form-check-label" for="diameter">Your wheels diameter</label>
+    <input type="number" name="diameter", id="diameter" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{% endblock %}

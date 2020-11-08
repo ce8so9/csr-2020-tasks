@@ -1,0 +1,12 @@
+{% extends "layout.html.jinja" %}
+
+{% block content %}
+<div id="content" style="background-image: url(/static/whale_{{w.image_num}}.jpg)">
+<h1>Here you go</h1>
+<h2>{{w.name}}</h2>
+Weight: {{w.weight}}
+<code>
+{{w.dump()}}
+</code>
+</div>
+{% endblock %}

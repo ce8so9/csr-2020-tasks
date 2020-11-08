@@ -1,0 +1,33 @@
+{% extends "layout.html.jinja" %}
+
+{% block content %}
+<div id="content">
+
+<section>
+    <h2 class="px-2 py-5">Wheels 'n' Whales</h2>
+    <div class="card-container">
+        <div class="card card-clickable">
+            <div class="card-body">
+                <h5 class="card-title">Wheel</h5>
+                <p class="card-text">
+                    This way to the wheels.
+                </p>
+                <a href="/wheel" class="btn btn-primary">Wheel</a>
+
+            </div>
+        </div>
+        <div class="card card-clickable">
+            <div class="card-body">
+                <h5 class="card-title">Whale</h5>
+                <p class="card-text">
+                    Here you can create a whale.
+                </p>
+                <a href="/whale" class="btn btn-primary">Whale</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+{% endblock %}
